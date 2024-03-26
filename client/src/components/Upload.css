@@ -1,0 +1,80 @@
+
+.homepage-container {
+  background-image: url("../Images/backgroundImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.upload-container {
+  margin-right: 10em;
+  background-color: #484646;
+  border-radius: 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  padding:20px 30px 30px;
+}
+.upload-label {
+  border-radius: 10px; /* Adjusted border radius for consistency */
+  padding: 50px;
+  cursor: pointer;
+  color: #ffffff;
+  background: #333333;
+  box-shadow: 1px 1px 10px 10px rgba(247, 247, 247, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-label.dragging {
+  border-color: #007bff;
+}
+
+.upload-label p {
+  color: #007bff;
+  margin-top: 15px; /* Increased margin for better spacing */
+}
+
+.upload-button {
+  background: #333333; /* Changed button color for consistency */
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px; /* Increased padding for better clickability */
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.upload-button:hover {
+  background: #4d4d4e; /* Darker background color on hover */
+}
+h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+  color:#ffffff
+}
+.error-message{
+  margin-top: 5px;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  /* Adjustments for tablets */
+  h1{
+    font-size: 20px;
+  }
+  .upload-label {
+    margin-bottom: 10px;
+  }
+  .upload-container {
+    margin: 0 auto; /* Center the upload container horizontally */
+    margin-bottom: 10px; /* Add some bottom margin */
+  }
+
+}
